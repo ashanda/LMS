@@ -2,8 +2,8 @@
 
 	$server = "localhost";
 	$username = "root";
-	$pass = "rDG&qXXUL6z8";
-	$db = "atlas-lms";
+	$pass = "123";
+	$db = "123";
 
 	//create connection 
 
@@ -28,7 +28,7 @@
 
 	function send_sms($receiver_number,$messsage)
     {
-		$conn = mysqli_connect("localhost","root","rDG&qXXUL6z8","atlas-lms");
+		$conn = mysqli_connect("localhost","root","123","123");
 		$sms=mysqli_query($conn,"SELECT * FROM lmssms WHERE id=1");
 		$sms_resalt=mysqli_fetch_array($sms);
 		$sender_id = $sms_resalt['sender_id'];
